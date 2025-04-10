@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 const GetMatched = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-5 sm:gap-8 bg-white px-5 sm:px-10 lg:px-20 pb-20">
+    <div className="w-full overflow-hidden flex flex-col items-center justify-center gap-5 sm:gap-8 bg-white px-5 sm:px-10 lg:px-20 pb-20">
       <Fade
         triggerOnce
         fraction={0.1}
