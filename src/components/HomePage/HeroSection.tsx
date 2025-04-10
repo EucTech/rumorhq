@@ -16,6 +16,7 @@ const HeroSection = () => {
           triggerOnce
           fraction={0.1}
           duration={1000}
+          delay={300}
           direction="up"
           className="w-full flex flex-col gap-4 justify-center items-center lg:items-start"
         >
@@ -31,11 +32,23 @@ const HeroSection = () => {
           </h1>
         </Fade>
 
+        <Fade
+          damping={0.5}
+          triggerOnce
+          fraction={0.1}
+          duration={1000}
+          delay={400}
+          direction="up"
+          className="w-full flex flex-col gap-4 justify-center items-center lg:items-start"
+        >
+
         <Link href="#">
           <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor-2 transition-colors duration-300 px-10 py-5 gap-2 rounded-3xl">
             <p className="text-[15px] font-[400]">Join our Waitlist</p>
           </Button>
         </Link>
+
+        </Fade>
         
         <Image
           src={Images.cc}

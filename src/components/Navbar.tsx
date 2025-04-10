@@ -25,14 +25,16 @@ const Navbar = () => {
             className="w-[8em]"
           />
         </Link> */}
+        <Link href="/">
         <h1 className="w-[8em] text-white font-bold text-[28px]">Rumorhq</h1>
+        </Link>
       </div>
 
       <div className={` hidden lg:flex items-center gap-6 ${inter.className}`}>
         <ul className=" hidden lg:flex items-center gap-6 text-[15px] text-white font-[500]">
           <Link
             className="hover:text-tcolor-2 transition-colors duration-300"
-            href="/"
+            href="/creators"
           >
             <li>Creators</li>
           </Link>
@@ -77,7 +79,7 @@ const Navbar = () => {
             </VisuallyHidden>
             <div className={`grid gap-8 py-20 pl-6 ${inter.className}`}>
               <ul className=" flex flex-col gap-6 text-white text-[15px] font-[500]">
-                <Link className="hover:text-tblue-2" href="/">
+                <Link className="hover:text-tblue-2" href="/creators">
                   <li>Creators</li>
                 </Link>
                 <Link className="hover:text-tblue-2" href="/brands">
