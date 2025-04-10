@@ -43,7 +43,7 @@ const GetMatched = () => {
           delay={300}
           className=""
         >
-          <div className="w-[450px] h-[500px] border border-[#E6E6E6] rounded-md overflow-hidden">
+          <div className=" sm:w-[450px] h-[500px] border border-[#E6E6E6] rounded-md overflow-hidden">
             <div className="w-full flex flex-col items-start gap-4 p-5 sm:p-8">
               <h1
                 className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
@@ -75,7 +75,7 @@ const GetMatched = () => {
           delay={400}
           className=""
         >
-          <div className="w-[450px] h-[500px] border border-[#E6E6E6] rounded-md overflow-hidden">
+          <div className="w-full sm:w-[450px] h-[500px] border border-[#E6E6E6] rounded-md overflow-hidden">
             <div className="w-full flex flex-col items-start gap-4 p-5 sm:p-8">
               <h1
                 className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
