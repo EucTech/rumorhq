@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Steps = () => {
   return (
-    <div className="w-full relative flex flex-col items-center gap-6 px-5 sm:px-10 md:px-20 bg-white py-20">
+    <div className="w-full relative flex flex-col items-center gap-6 px-5 sm:px-10 md:px-20 xl:px-40 bg-white py-20">
       <Image
         src={Images.brown_star}
         alt="hero image"
@@ -45,7 +45,7 @@ const Steps = () => {
         </p>
       </Fade>
 
-      <div className="w-full flex items-center justify-center gap-6 flex-wrap pt-5 sm:pt-10">
+      <div className="w-full flex items-center justify-center gap-6 xl:gap-12 flex-wrap pt-5 sm:pt-10 overflow-hidden">
         <Fade
           triggerOnce
           fraction={0.1}
