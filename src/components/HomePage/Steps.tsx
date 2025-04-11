@@ -100,7 +100,7 @@ const Steps = () => {
         >
           <StepsProps
             title="Measure"
-            content="We measure reach, engagement, conversions, and more to optimize the LinkedIn campaign and connect efforts to business impact. "
+            content="We measure reach, engagement, conversions, and more to optimize the LinkedIn campaign and connect efforts to business impact."
             className="bg-[#FFF6F0]"
           />
         </Fade>

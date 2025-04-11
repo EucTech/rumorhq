@@ -5,7 +5,7 @@ import React from "react";
 
 const HackathonServices = () => {
   return (
-    <div className="w-full  flex flex-col lg:flex-row items-startjustify-center gap-20 bg-[#fff] py-20 px-5 sm:px-10 lg:px-20">
+    <div className="w-full  flex flex-col lg:flex-row items-startjustify-center gap-20 bg-[#fff] py-10 sm:py-20 px-5 sm:px-10 lg:px-20">
       <div className=" w-full sm:w-[80%] md:w-[70%] flex-1 flex flex-col  items-start gap-6">
         <div className="flex flex-col items-start gap-">
           <Image

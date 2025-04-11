@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 import { Images } from "@/assets";
 
-const HackathonHeroSection = () => {
+const CreatorHeroSection = () => {
   return (
     <div className=" relative overflow-hidden w-full min-h-[550px] flex flex-col gap-10 text-center items-center justify-center text-[#FFF6F0] bg-[#fff] py-20 px-5 sm:px-20 ">
       <Fade
@@ -99,4 +99,4 @@ const HackathonHeroSection = () => {
   );
 };
 
-export default HackathonHeroSection;
+export default CreatorHeroSection;
