@@ -11,11 +11,16 @@ import {
 } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { inter } from "@/font";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const closeSheet = () => setIsOpen(false);
+
+  const isActive = (path: string) =>
+    pathname === path ? "text-tcolor-2 font-bold" : "";
 
   return (
     <div className="fixed z-50 w-full h-[5em] bg-bgcolor backdrop-blur-md flex items-center px-5 md:px-10 lg:px-24 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
@@ -25,20 +30,29 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className={` hidden lg:flex items-center gap-6 ${inter.className}`}>
-        <ul className="hidden lg:flex items-center gap-6 text-[15px] text-white font-[500]">
-          <Link className="hover:text-tcolor-2 transition-colors duration-300" href="/creators">
+      <div className={`hidden lg:flex items-center gap-6 ${inter.className}`}>
+        <ul className="flex items-center gap-6 text-[15px] text-white font-[500]">
+          <Link
+            className={`hover:text-tcolor-2 transition-colors duration-300 ${isActive("/creators")}`}
+            href="/creators"
+          >
             <li>Creators</li>
           </Link>
-          <Link className="hover:text-tcolor-2 transition-colors duration-300" href="/brands">
+          <Link
+            className={`hover:text-tcolor-2 transition-colors duration-300 ${isActive("/brands")}`}
+            href="/brands"
+          >
             <li>Brands</li>
           </Link>
-          <Link className="hover:text-tcolor-2 transition-colors duration-300" href="/hackathons">
+          <Link
+            className={`hover:text-tcolor-2 transition-colors duration-300 ${isActive("/hackathons")}`}
+            href="/hackathons"
+          >
             <li>Hackathons</li>
           </Link>
-          <Link className="hover:text-tcolor-2 transition-colors duration-300" href="/gallery">
+          {/* <Link className="hover:text-tcolor-2 transition-colors duration-300" href="/gallery">
             <li>Gallery</li>
-          </Link>
+          </Link> */}
         </ul>
 
         <Link href="#">
@@ -62,23 +76,38 @@ const Navbar = () => {
             </VisuallyHidden>
             <div className={`grid gap-8 py-20 pl-6 ${inter.className}`}>
               <ul className="flex flex-col gap-6 text-white text-[15px] font-[500]">
-                <Link href="/creators" >
-                  <li className="hover:text-tblue-2" onClick={closeSheet}>Creators</li>
+                <Link
+                  href="/creators"
+                  className={`${isActive("/creators")}`}
+                >
+                  <li className="hover:text-tblue-2" onClick={closeSheet}>
+                    Creators
+                  </li>
                 </Link>
-                <Link href="/brands" >
-                  <li className="hover:text-tblue-2" onClick={closeSheet}>Brands</li>
+                <Link
+                  href="/brands"
+                  className={`${isActive("/brands")}`}
+                >
+                  <li className="hover:text-tblue-2" onClick={closeSheet}>
+                    Brands
+                  </li>
                 </Link>
-                <Link href="/hackathons" >
-                  <li className="hover:text-tblue-2" onClick={closeSheet}>Hackathons</li>
-                </Link>
-                <Link href="/gallery" onClick={closeSheet}>
-                  <li className="hover:text-tblue-2">Gallery</li>
+                <Link
+                  href="/hackathons"
+                  className={`${isActive("/hackathons")}`}
+                >
+                  <li className="hover:text-tblue-2" onClick={closeSheet}>
+                    Hackathons
+                  </li>
                 </Link>
               </ul>
 
               <div className="flex flex-wrap items-center gap-6">
-                <Link href="#" >
-                  <Button onClick={closeSheet} className="flex items-center cursor-pointer bg-tcolor transition-colors duration-300 text-white hover:bg-tcolor-2 px-6! py-5 gap-2 rounded-md">
+                <Link href="#">
+                  <Button
+                    onClick={closeSheet}
+                    className="flex items-center cursor-pointer bg-tcolor transition-colors duration-300 text-white hover:bg-tcolor-2 px-6! py-5 gap-2 rounded-md"
+                  >
                     <p className="text-[15px] font-[400]">Join our Waitlist</p>
                   </Button>
                 </Link>
