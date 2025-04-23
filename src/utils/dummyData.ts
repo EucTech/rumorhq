@@ -10,8 +10,9 @@ interface CustomerReviewPropsType {
 
 interface BrandPropsType {
     id: number;
-    image: string;
+    icon: string;
     alt: string;
+    title: string;
 }
 
 
@@ -63,28 +64,33 @@ export const CustomerReviewData: CustomerReviewPropsType[] = [
 export const BrandType: BrandPropsType[] = [
   {
     id: 1,
-    image: Images.brand1.src,
+    icon: Images.icon5.src,
     alt: "Brand 1",
+    title: "Video Editor",
   },
-    {
-        id: 2,
-        image: Images.brand2.src,
-        alt: "Brand 2",
-    },
-    {
-        id: 3,
-        image: Images.brand3.src,
-        alt: "Brand 3",
-    },
-    {
-        id: 4,
-        image: Images.brand4.src,
-        alt: "Brand 4",
-    },
-    {
-        id: 5,
-        image: Images.brand5.src,
-        alt: "Brand 5",
-    },
-
+  {
+    id: 2,
+    icon: Images.icon6.src,
+    alt: "Brand 2",
+    title: "Thumbnail Designer",
+  },
+  {
+    id: 3,
+    icon: Images.icon7.src,
+    alt: "Brand 3",
+    title: "Content Strategist",
+  },
+  {
+    id: 4,
+    icon: Images.icon8.src,
+    alt: "Brand 4",
+    title: "Social media managers",
+  },
+  {
+    id: 5,
+    icon: Images.icon8.src,
+    alt: "Brand 5",
+    title: "Creative directors",
+  },
+  
 ]
