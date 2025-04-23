@@ -54,13 +54,16 @@ const GlobalBrands = () => {
           <h1
             className={`w-full leading-[1.2] text-[32px] sm:text-[35px] font-bold ${dm_sans.className}`}
           >
-            Supported by Global Brands
+            Discover and Hire
           </h1>
+          <p className="w-full sm:w-[80%] lg:w-[70%] text-[#141011] text-[16px] font-sf font-[500]">
+            Tap into experts who create viral content for the biggest creators
+            in the world, whether that&apos;s freelance or full-time.
+          </p>
         </Fade>
       </div>
 
       <div className="w-full overflow-hidden ">
-
         <div className="hidden lg:flex w-full items-center justify-center gap-1 xl:gap-4 flex-wrap">
           {BrandType.map((item) => (
             <Image
@@ -70,7 +73,7 @@ const GlobalBrands = () => {
               height={1000}
               alt={item.alt}
               className="w-[200px] h-[100px] object-contain "
-              />
+            />
           ))}
         </div>
 

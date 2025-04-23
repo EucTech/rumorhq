@@ -50,7 +50,7 @@ const ServicesCard = () => {
           >
             <ServicesCardProps
               title="Targeted Exposure"
-              content="Ensure that your message reaches the right audience at the right time."
+              content="Content creation (TikTok, YouTube, Instagram)"
             />
           </Fade>
           <Fade
@@ -64,7 +64,7 @@ const ServicesCard = () => {
           >
             <ServicesCardProps
               title="Cost-Effective"
-              content="Maximize your advertising budget with our flexible pricing plans."
+              content="Social media shoutouts or trend participation"
             />
           </Fade>
           <Fade
@@ -77,8 +77,8 @@ const ServicesCard = () => {
             className=""
           >
             <ServicesCardProps
-              title="Unmatched Engagement"
-              content="Dynamic platform that captivates viewers and leaves a lasting impression"
+              title="Creative Storytelling"
+              content="whether it's scripting for videos, writing engaging captions, crafting compelling brand stories, or even sharing your personal journey in a relatable way."
               iconStyle="bg-[#FDDE90]"
             />
           </Fade>
@@ -92,8 +92,8 @@ const ServicesCard = () => {
             className=""
           >
             <ServicesCardProps
-              title="Real-Time Analytics"
-              content="Track the performance of your ad campaigns in real-time with our advanced analytics dashboard. "
+              title="Design, memes, and short-form video"
+              content="If you're a visual storyteller or meme genius, there&apos;s a space (and cash) waiting for you here."
             />
           </Fade>
         </div>

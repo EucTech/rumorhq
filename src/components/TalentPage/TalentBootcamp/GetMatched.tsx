@@ -21,16 +21,15 @@ const GetMatched = () => {
           Packed with powerful features 🔥
         </p>
         <h1
-          className={` sm:w-[80%] md:w-[60%] leading-[1.2] text-[33px] sm:text-[35px] font-bold ${dm_sans.className}`}
+          className={` leading-[1.2] text-[33px] sm:text-[35px] font-bold ${dm_sans.className}`}
         >
-          Get matched with{" "}
-          <span className="text-tcolor">LinkedIn Creators</span> for
+          Why WithAudacious?
         </h1>
         <p
-          className={`sm:w-[95%] md:w-[90%] text-[#5E5D6F] text-[15px] font-normal ${inter.className} `}
+          className={`sm:w-[95%] md:w-[80%] text-[#5E5D6F] text-[15px] font-normal ${inter.className} `}
         >
-          From data purchases to booking flights, our app has everything you
-          need to simplify your life.
+          At WithAudacious, we understand the creator&apos;s hustle. We&apos;ve
+          been there, ghosted by brands, overworked and underpaid.
         </p>
       </Fade>
 
@@ -48,13 +47,13 @@ const GetMatched = () => {
               <h1
                 className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
               >
-                Purchase Airtime & Data
+                Portfolio Driven Learning
               </h1>
               <p
                 className={` text-[14px] text-[#5E5D6F] font-normal ${inter.className}`}
               >
-                Stay connected with easy airtime and data purchases for any
-                network—anytime, anywhere, all in one app.
+                You don&apos;t just learn, you create. We help you build a
+                strong, strategic portfolio that gets you hired.
               </p>
             </div>
 
@@ -80,13 +79,13 @@ const GetMatched = () => {
               <h1
                 className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
               >
-                Purchase Airtime & Data
+                Brand Access and Community
               </h1>
               <p
                 className={` text-[14px] text-[#5E5D6F] font-normal ${inter.className}`}
               >
-                Stay connected with easy airtime and data purchases for any
-                network—anytime, anywhere, all in one app.
+                Get discovered by brands, collaborate with fellow creators, and
+                stay inspired through events, mixers, and real partnerships.
               </p>
             </div>
 

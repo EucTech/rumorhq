@@ -1,9 +1,9 @@
 import { dm_sans, instrument_sans } from "@/font";
 import React from "react";
-import StepsProps from "./StepsProps";
 import Image from "next/image";
 import { Images } from "@/assets";
 import { Fade } from "react-awesome-reveal";
+import StepsProps from "./StepsProps";
 
 const Steps = () => {
   return (
@@ -29,19 +29,19 @@ const Steps = () => {
         fraction={0.1}
         duration={1000}
         direction="up"
-        className=" w-full sm:w-[80%] xl:w-[60%]  flex flex-col items-center gap-2 justify-center text-center"
+        className=" w-full sm:w-[80%]  flex flex-col items-center gap-2 justify-center text-center"
       >
         <h1
           className={` tracking-[0.1px] text-[30px] font-bold text-[#0A0A0A] ${instrument_sans.className}`}
         >
-          Get Started in 3 Simple Steps
+          Who is this training for?
         </h1>
         <p
           className={` text-[#5E5D6F] font-normal text-[16px] ${dm_sans.className}`}
         >
-          Discover and hire content creators, video editors, marketing
-          strategist, brand managers, social media managers, thumbnail editors,
-          script writers, content strategist from withaudacious.
+          You&apos;re in the right place if you&apos;re a: content creators, video
+          editors, marketing strategist, brand managers, social media managers,
+          thumbnail editors, script writers, and content strategist.
         </p>
       </Fade>
 
@@ -55,10 +55,8 @@ const Steps = () => {
           className=""
         >
           <StepsProps
-            title="Match"
-            content=" We help you discover and match with vetted Creators (out of the 1B
-            users on LinkedIn) in of our global Creator network based on brand
-            objectives, values, and target reach for powerful collaborations."
+            title="Build Portfolio"
+            content="we&apos;re training the next generation of creators to become skilled, brand-ready professionals whether you&apos;re starting out or leveling up."
           />
         </Fade>
 
@@ -72,7 +70,7 @@ const Steps = () => {
         >
           <StepsProps
             title="Manage"
-            content="We manage the brand-creator relationships, handling the heavy lifting to ensure a smooth and successful partnership, including content review. We will handle all communications, follow ups, and reminders to give you time back."
+            content="We help you move beyond trends by creating purposeful content that reflects your voice, aligns with your goals, and connects with real people not just the algorithm."
             className="bg-[#FFF6F0]"
           />
         </Fade>
@@ -85,8 +83,9 @@ const Steps = () => {
           className="  "
         >
           <StepsProps
-            title="Monitize"
-            content="We manage monetization through win-win rate card negotiations. Plus, we handle contracting and payouts to each of the individual Creators so that Brands only have work with us versus multiple Creators."
+            title="CV Revamp"
+            content="You're more than “just a creator.” You're a brand. A business. A professional. We'll help you:"
+            content1="Write a professional CV or media kit that reflects your strengths, understand job titles and what recruiters/brands are really looking for"
             className="bg-[#FFF6F0]"
           />
         </Fade>
@@ -99,8 +98,10 @@ const Steps = () => {
           className="  "
         >
           <StepsProps
-            title="Measure"
-            content="We measure reach, engagement, conversions, and more to optimize the LinkedIn campaign and connect efforts to business impact."
+            title="Access to Community "
+            content="You&apos;ll join a vibrant, supportive community of creators like you."
+            content1="Get feedback, accountability, and job leads from your peers."
+            content2="Access weekly live sessions, creative challenges, and collab spaces."
             className="bg-[#FFF6F0]"
           />
         </Fade>

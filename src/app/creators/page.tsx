@@ -5,6 +5,7 @@ import CreatorSteps from '@/components/CreatorPage/CreatorSteps'
 import React from 'react'
 import CreatorServices from '@/components/CreatorPage/CreatorServices'
 import LetTalk from '@/components/LetTalk'
+import FAQS from '@/components/FAQS'
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
         <GlobalBrands/>
         <CreatorSteps/>
         <CreatorServices/>
+        <FAQS/>
         <LetTalk/>
     </div>
   )

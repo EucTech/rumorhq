@@ -1,12 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-tcolor: #BF91F9;
   --color-tcolor-2: #C8AC80;
   --color-bgcolor: #141011;
+}
+
+@theme inline {
+  --font-sf: 'SF Pro Display', sans-serif;
 }
 
 @theme inline {

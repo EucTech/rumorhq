@@ -22,7 +22,7 @@ const LetTalk = () => {
         <Button className="flex items-center gap-5 cursor-pointer bg-[#191919] text-white hover:bg-[#191919]/80 transition-colors duration-300 !px-6 py-8 rounded-md">
           <FaEnvelope className="text-[#E1E8ED] size-7" />
           <p className={`text-[16px] font-[400] ${inter.className}`}>
-            support@rumorhq.com
+            Start Hiring
           </p>
         </Button>
       </Link>

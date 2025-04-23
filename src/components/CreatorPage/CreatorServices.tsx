@@ -1,13 +1,15 @@
 import { Images } from "@/assets";
 import { dm_sans, instrument_sans, inter } from "@/font";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import { Button } from "../ui/button";
 
 const CreatorServices = () => {
   return (
-    <div className="w-full  flex flex-col lg:flex-row items-start justify-center gap-20 bg-[#fff] py-10 sm:py-20 px-5 sm:px-10 xl:px-20">
-      <div className=" w-full sm:w-[80%] md:w-[70%] flex-1 flex flex-col  items-start gap-10 sm:gap-16">
+    <div className="w-full  flex flex-col lg:flex-row items-start justify-center gap-20 bg-[#fff] py-10 sm:py-20 px-5 sm:px-10 lg:px-20 xl:px-30 2xl:px-50">
+      <div className="overflow-hidden w-full sm:w-[90%] lg:w-[40%] flex-1 flex flex-col  items-start gap-10 sm:gap-10">
         <div className="flex flex-1 flex-col items-start gap-6 mb-2">
           <div className="flex items-center sm:gap-5 gap-3 text-tcolor py-2 px-6 rounded-4xl  bg-[#71391E0F] font-bold text-[20px]">
             <GoDotFill className="text-[30px]" />
@@ -86,6 +88,11 @@ const CreatorServices = () => {
             </p>
           </div>
         </div>
+        <Link href="#">
+          <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/90 transition-colors duration-300 px-16 py-6 gap-2 rounded-md">
+            <p className="text-[15px] font-[400]">Get Started</p>
+          </Button>
+        </Link>
       </div>
 
       <Image
@@ -93,7 +100,7 @@ const CreatorServices = () => {
         alt="person image"
         width={1000}
         height={1000}
-        className=" w-full sm:w-[450px] xl:w-[500px] 2xl:w-[500px]"
+        className=" w-full lg:w-[400px]"
       />
     </div>
   );
