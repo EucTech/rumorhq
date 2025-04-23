@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 const CreatorSteps = () => {
   return (
-    <div className="w-full relative flex flex-col items-center gap-6 px-5 sm:px-10 md:px-20 xl:px-40 bg-[#E5DBFF] py-16 sm:py-24">
+    <div className="overflow-hidden w-full relative flex flex-col items-center gap-6 px-5 sm:px-10 md:px-20 xl:px-40 bg-[#E5DBFF] py-16 sm:py-24">
       <Image
         src={Images.pink_star}
         alt="hero image"
@@ -49,6 +49,37 @@ const CreatorSteps = () => {
       </Fade>
 
       <div className="w-full flex xl:flex-nowrap flex-wrap items-center justify-center gap-5 pt-10">
+      <Fade
+          triggerOnce
+          fraction={0.1}
+          duration={1000}
+          direction="up"
+          delay={500}
+          className=""
+        >
+          <div className="w-full sm:w-[400px] max-h-[450px] h-[450px] border border-[#B3B3B3] rounded-2xl overflow-hidden">
+            <Image
+              src={Images.c3}
+              alt="get matched image"
+              width={500}
+              height={500}
+              className="w-full h-60"
+            />
+            <div className="w-full h-full flex flex-col items-start bg-white gap-4 p-5 overflow-hidden">
+              <h1
+                className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
+              >
+                We manage the end to end hiring
+              </h1>
+              <p
+                className={` text-[14px] text-[#5E5D6F] font-normal ${inter.className}`}
+              >
+                Upon arrival, the payment process is simple. The payment is
+                processed and you can pay cash
+              </p>
+            </div>
+          </div>
+        </Fade>
         <Fade
           triggerOnce
           fraction={0.1}
@@ -57,15 +88,15 @@ const CreatorSteps = () => {
           delay={300}
           className=""
         >
-          <div className=" sm:w-[400px] h-[450px] border border-[#B3B3B3] rounded-md overflow-hidden">
+          <div className=" sm:w-[400px] max-h-[450px] h-[450px] border border-[#B3B3B3] rounded-2xl overflow-hidden">
             <Image
-              src={Images.getmatch}
+              src={Images.c1}
               alt="get matched image"
               width={500}
               height={500}
               className="w-full h-60"
             />
-            <div className="w-full h-full flex flex-col items-start bg-white gap-4 p-5">
+            <div className="w-full h-full flex flex-col items-start bg-white gap-4 p-5 overflow-hidden">
               <h1
                 className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
               >
@@ -89,15 +120,15 @@ const CreatorSteps = () => {
           delay={400}
           className=""
         >
-          <div className="w-full sm:w-[400px] h-[450px] border border-[#B3B3B3] rounded-md overflow-hidden">
+          <div className="w-full sm:w-[400px] max-h-[450px] h-[450px] border border-[#B3B3B3] rounded-2xl overflow-hidden">
             <Image
-              src={Images.getmatch}
+              src={Images.c2}
               alt="get matched image"
               width={500}
               height={500}
               className="w-full h-60"
             />
-            <div className="w-full h-full flex flex-col items-start bg-white gap-4 p-5">
+            <div className="w-full h-full flex flex-col items-start bg-white gap-4 p-5 overflow-hidden">
               <h1
                 className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
               >
@@ -112,37 +143,7 @@ const CreatorSteps = () => {
             </div>
           </div>
         </Fade>
-        <Fade
-          triggerOnce
-          fraction={0.1}
-          duration={1000}
-          direction="up"
-          delay={500}
-          className=""
-        >
-          <div className="w-full sm:w-[400px] h-[450px] border border-[#B3B3B3] rounded-md overflow-hidden">
-            <Image
-              src={Images.getmatch}
-              alt="get matched image"
-              width={500}
-              height={500}
-              className="w-full h-60"
-            />
-            <div className="w-full h-full flex flex-col items-start bg-white gap-4 p-5">
-              <h1
-                className={` text-[18px] text-[#141011] font-bold ${dm_sans.className}`}
-              >
-                We manage the end to end hiring
-              </h1>
-              <p
-                className={` text-[14px] text-[#5E5D6F] font-normal ${inter.className}`}
-              >
-                Upon arrival, the payment process is simple. The payment is
-                processed and you can pay cash
-              </p>
-            </div>
-          </div>
-        </Fade>
+       
       </div>
     </div>
   );

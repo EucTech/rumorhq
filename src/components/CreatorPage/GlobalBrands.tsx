@@ -1,42 +1,15 @@
 "use client";
 import { dm_sans, inter } from "@/font";
-import React from "react";
-import { Fade } from "react-awesome-reveal";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { BrandType } from "@/utils/dummyData";
 import Image from "next/image";
+import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const GlobalBrands = () => {
-  const options = {
-    type: "loop",
-    drag: "free",
-    focus: "center",
-    arrows: false,
-    pagination: false,
-    fixedWidth: "13rem",
-    fixedHeight: "6rem",
-    width: "100%",
-    perPage: 4,
-    autoScroll: {
-      speed: 2,
-    },
-    breakpoints: {
-      640: {
-        perPage: 4,
-      },
-      850: {
-        perPage: 4,
-      },
-      1024: {
-        perPage: 4,
-      },
-    },
-  };
+ 
 
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-5 py-20">
+    <div className="w-full flex flex-col items-center justify-center gap-5 py-20 px-2 sm:px-10 md:px-20">
       <div className="w-full flex flex-col items-center bg-white gap-4 p-5 sm:p-8">
         <Fade
           triggerOnce
@@ -47,66 +20,53 @@ const GlobalBrands = () => {
           className="  flex flex-col items-center text-center justify-center gap-6"
         >
           <p
-            className={`w-fit flex items-center gap-4 font-bold text-[12px] text-tcolor bg-[#FFF6F0] px-5 py-1 rounded-4xl  ${inter.className} `}
+            className={`w-fit flex items-center gap-4 font-[400] text-[16px] text-tcolor bg-[#BF91F91A] px-5 py-1 rounded-lg  ${inter.className} `}
           >
-            Follow our Journey
+            Build your team
           </p>
           <h1
             className={`w-full leading-[1.2] text-[32px] sm:text-[35px] font-bold ${dm_sans.className}`}
           >
-            Discover and Hire
+            The hiring platform built for creators like you
           </h1>
           <p className="w-full sm:w-[80%] lg:w-[70%] text-[#141011] text-[16px] font-sf font-[500]">
-            Tap into experts who create viral content for the biggest creators
-            in the world, whether that&apos;s freelance or full-time.
+            Wearing every hat can drain your creativity. Skip the burnout, build
+            your dream team effortlessly and stay focused on what you do best.
           </p>
         </Fade>
       </div>
 
-      <div className="w-full overflow-hidden ">
-        <div className="hidden lg:flex w-full items-center justify-center gap-1 xl:gap-4 flex-wrap">
-          {BrandType.map((item) => (
-            <Image
+      <div className="w-full flex flex-wrap items-center justify-center gap-6 ">
+        {BrandType.map((item) => {
+          return (
+            <Fade
               key={item.id}
-              src={item.image}
-              width={1000}
-              height={1000}
-              alt={item.alt}
-              className="w-[200px] h-[100px] object-contain "
-            />
-          ))}
-        </div>
-
-        <div className="w-full lg:hidden block">
-          <Splide options={options} extensions={{ AutoScroll }}>
-            {BrandType.map((item) => {
-              return (
-                <SplideSlide
-                  key={item.id}
-                  style={{
-                    overflow: "hidden",
-                    // position: "relative",
-                    margin: "2rem",
-                    marginBottom: "3rem",
-                    padding: "1rem",
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div className=" w-[200px]">
-                    <Image
-                      src={item.image}
-                      width={1000}
-                      height={1000}
-                      alt={item.alt}
-                      className="w-[100%] h-[100%] object-contain"
-                    />
-                  </div>
-                </SplideSlide>
-              );
-            })}
-          </Splide>
-        </div>
+              direction="up"
+              delay={ item.id * 200}
+              duration={1000}
+              damping={0.5}
+              fraction={0.1}
+              triggerOnce
+              className="w-[10em] h-[8em]"
+            >
+              <div
+                key={item.id}
+                className="w-full h-full flex flex-col items-center justify-center gap-3 rounded-lg border border-[#E1E8EDBA]"
+              >
+                <Image
+                  src={item.icon}
+                  alt={item.alt}
+                  width={2000}
+                  height={2000}
+                  className="w-10"
+                />
+                <p className="font-sf text-[#000] text-[13px] font-[400]">
+                  {item.title}
+                </p>
+              </div>
+            </Fade>
+          );
+        })}
       </div>
     </div>
   );
