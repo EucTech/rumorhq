@@ -22,7 +22,7 @@ const TalentVideo = () => {
               Who is this training for?
             </h1>
             <p className="text-[14px] text-[#5E5D6F] font-normal">
-              You're in the right place if you're a: content creators, video
+              You&apos;re in the right place if you&apos;re a: content creators, video
               editors, marketing strategist, brand managers, social media
               managers, community manager, thumbnail editors, script writers,
               content strategist.

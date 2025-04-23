@@ -43,22 +43,22 @@ const Navbar = () => {
           <div>
             <TalentModal />
           </div>
-          <Link
+          {/* <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
               "/creators"
             )}`}
             href="/creators"
           >
             <li>Creators</li>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
               "/resources"
             )}`}
             href="/resources"
           >
             <li>Resources</li>
-          </Link>
+          </Link> */}
           {/* <Link className="hover:text-tcolor transition-colors duration-300" href="/gallery">
             <li>Gallery</li>
           </Link> */}
@@ -66,7 +66,7 @@ const Navbar = () => {
 
         <Link href="#">
           <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/70 transition-colors duration-300 px-6! py-5 gap-2 rounded-md">
-            <p className="text-[15px] font-[400]">Join our Waitlist</p>
+            <p className="text-[15px] font-[400]">Book a Call</p>
           </Button>
         </Link>
       </div>
@@ -93,16 +93,16 @@ const Navbar = () => {
                 <div>
                   <TalentModal onClose={closeSheet} />
                 </div>
-                <Link href="/creators" className={`${isActive("/creators")}`}>
+                {/* <Link href="/creators" className={`${isActive("/creators")}`}>
                   <li className="hover:text-tblue-2" onClick={closeSheet}>
                     Creators
                   </li>
-                </Link>
-                <Link href="/resources" className={`${isActive("/resources")}`}>
+                </Link> */}
+                {/* <Link href="/resources" className={`${isActive("/resources")}`}>
                   <li className="hover:text-tblue-2" onClick={closeSheet}>
                     Resources
                   </li>
-                </Link>
+                </Link> */}
               </ul>
 
               <div className="flex flex-wrap items-center gap-6">
@@ -111,7 +111,7 @@ const Navbar = () => {
                     onClick={closeSheet}
                     className="flex items-center cursor-pointer bg-tcolor transition-colors duration-300 text-white hover:bg-tcolor/70 px-6! py-5 gap-2 rounded-md"
                   >
-                    <p className="text-[15px] font-[400]">Join our Waitlist</p>
+                    <p className="text-[15px] font-[400]">Book a Call</p>
                   </Button>
                 </Link>
               </div>

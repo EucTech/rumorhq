@@ -118,7 +118,7 @@ const SimpleStep = () => {
             duration={1000}
             delay={800}
             direction="up"
-            className=""
+            className="w-full"
           >
             <Link
               target="_blank"

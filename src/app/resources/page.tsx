@@ -1,8 +1,8 @@
 import CustomersReviews from '@/components/CustomersReviews'
-import HackathonGetMatched from '@/components/HackathonPage/HackathonGetMatched'
-import HackathonHeroSection from '@/components/HackathonPage/HackathonHeroSection'
-import HackathonInfoCard from '@/components/HackathonPage/HackathonInfoCard'
-import HackathonServices from '@/components/HackathonPage/HackathonServices'
+import HackathonGetMatched from '@/components/BrandsPage/BrandsGetMatched'
+import HackathonHeroSection from '@/components/BrandsPage/BrandsHeroSection'
+import HackathonInfoCard from '@/components/BrandsPage/BrandsInfoCard'
+import HackathonServices from '@/components/BrandsPage/BrandsServices'
 import LetTalk from '@/components/LetTalk'
 import React from 'react'
 

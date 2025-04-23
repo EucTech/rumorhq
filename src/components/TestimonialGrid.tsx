@@ -1,10 +1,15 @@
 "use client";
-import React, { useState } from 'react';
+import { Images } from "@/assets";
+import { dm_sans, inter } from "@/font";
+import Image from "next/image";
+import React, { useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import { IoArrowBackCircle, IoArrowForwardCircle } from "react-icons/io5";
 
 const TestimonialGrid = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
-  const testimonials = [
+
+  const Testimonials = [
     {
       quote: "What stood out for me was how easy it was to find fresh opportunities that matched my style. The team really cares about helping you win.",
       author: "Founder, Solarcorp"
@@ -12,297 +17,98 @@ const TestimonialGrid = () => {
     {
       quote: "The platform connected me with clients I never would have found otherwise. It's been transformative for my business.",
       author: "Designer, Creativo"
+    },
+    {
+      quote: "What stood out for me was how easy it was to find fresh opportunities that matched my style. The team really cares about helping you win.",
+      author: "Founder, Luxury Homes"
+    },
+    {
+      quote: "The platform connected me with clients I never would have found otherwise. It's been transformative for my business.",
+      author: "Designer, Artistry"
     }
   ];
-  
+
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    setCurrentSlide((prev) => (prev + 1) % Testimonials.length);
   };
   
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentSlide((prev) => (prev - 1 + Testimonials.length) % Testimonials.length);
   };
 
   return (
-    <div className="discover-container">
-      <div className="discover-content">
-        <h1 className="discover-title">Discover and Hire</h1>
-        <p className="discover-description">
-          Tap into experts who create vital content for the biggest names in the world, whether that's freelance or full-time
+    <div className="w-full h-full flex flex-col gap-10 items-center justify-center py-10 px-5 md:px-10 lg:px-20">
+      <div className="w-full flex flex-col items-center bg-white gap-4 p-5 sm:p-8">
+        <Fade
+                triggerOnce
+                fraction={0.1}
+                duration={1000}
+                direction="up"
+                delay={400}
+                className="  flex flex-col items-center text-center justify-center gap-6"
+              >
+        <p
+          className={`w-fit flex items-center gap-4 font-[400] text-[18px] text-tcolor bg-[#BF91F91A] px-5 py-1 rounded-lg  ${inter.className} `}
+        >
+          Testimonials
         </p>
-        
-        <div className="image-grid">
-          {/* Left image stack */}
-          <div className="image-stack left-stack">
-            <div className="image-wrapper top-left-1">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-            <div className="image-wrapper top-left-2">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-            <div className="image-wrapper bottom-left">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-          </div>
-          
-          {/* Center image stack */}
-          <div className="image-stack center-stack">
-            <div className="image-wrapper center-top">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-            <div className="image-wrapper center-bottom">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-          </div>
-          
-          {/* Right image stack */}
-          <div className="image-stack right-stack">
-            <div className="image-wrapper top-right-1">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-            <div className="image-wrapper top-right-2">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-            <div className="image-wrapper bottom-right">
-              <img src="/p1.png" alt="Professional working" className="stacked-image" />
-            </div>
-          </div>
-        </div>
-        
-        <div className="testimonial-section">
-          <p className="testimonial-author">{testimonials[currentSlide].author}</p>
-          <p className="testimonial-quote">"{testimonials[currentSlide].quote}"</p>
-          
-          <div className="testimonial-controls">
-            <button 
-              className="control-button"
-              onClick={prevSlide}
-              aria-label="Previous testimonial"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-            <button 
-              className="control-button next-button"
-              onClick={nextSlide}
-              aria-label="Next testimonial"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-          </div>
-        </div>
+        <h1
+          className={`w-full leading-[1.2] text-[32px] sm:text-[35px] font-bold ${dm_sans.className}`}
+        >
+          Discover and Hire
+        </h1>
+        <p className="w-full sm:w-[80%] lg:w-[70%] text-[#141011] text-[16px] font-sf font-[500]">
+          Tap into experts who create viral content for the biggest creators in
+          the world, whether that&apos;s freelance or full-time.
+        </p>
+        </Fade>
       </div>
 
-      <style jsx>{`
-        .discover-container {
-          width: 100%;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 2rem 1rem;
-        }
-        
-        .discover-content {
-          max-width: 900px;
-          margin: 0 auto;
-          text-align: center;
-        }
-        
-        .discover-title {
-          font-size: 2.5rem;
-          margin-bottom: 1rem;
-          font-weight: 600;
-        }
-        
-        .discover-description {
-          font-size: 1.1rem;
-          line-height: 1.5;
-          color: #666;
-          margin-bottom: 3rem;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        
-        .image-grid {
-          display: flex;
-          justify-content: space-between;
-          position: relative;
-          height: 400px;
-          margin-bottom: 3rem;
-        }
-        
-        .image-stack {
-          position: relative;
-          width: 33%;
-        }
-        
-        .image-wrapper {
-          position: absolute;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-          transition: transform 0.3s ease;
-        }
-        
-        .image-wrapper:hover {
-          transform: translateY(-8px);
-        }
-        
-        .stacked-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        
-        /* Left stack positioning */
-        .top-left-1 {
-          top: 20px;
-          left: 10px;
-          width: 120px;
-          height: 160px;
-          z-index: 2;
-        }
-        
-        .top-left-2 {
-          top: 70px;
-          left: 50px;
-          width: 120px;
-          height: 160px;
-          z-index: 1;
-        }
-        
-        .bottom-left {
-          top: 180px;
-          left: 30px;
-          width: 140px;
-          height: 180px;
-          z-index: 3;
-        }
-        
-        /* Center stack positioning */
-        .center-top {
-          top: 50px;
-          left: calc(50% - 75px);
-          width: 150px;
-          height: 190px;
-          z-index: 2;
-        }
-        
-        .center-bottom {
-          top: 160px;
-          left: calc(50% - 75px);
-          width: 150px;
-          height: 190px;
-          z-index: 1;
-        }
-        
-        /* Right stack positioning */
-        .top-right-1 {
-          top: 20px;
-          right: 10px;
-          width: 120px;
-          height: 160px;
-          z-index: 2;
-        }
-        
-        .top-right-2 {
-          top: 70px;
-          right: 50px;
-          width: 120px;
-          height: 160px;
-          z-index: 1;
-        }
-        
-        .bottom-right {
-          top: 180px;
-          right: 30px;
-          width: 140px;
-          height: 180px;
-          z-index: 3;
-        }
-        
-        .testimonial-section {
-          margin-top: 2rem;
-          padding: 1rem;
-        }
-        
-        .testimonial-author {
-          font-weight: 600;
-          margin-bottom: 0.5rem;
-        }
-        
-        .testimonial-quote {
-          font-size: 1.1rem;
-          line-height: 1.6;
-          color: #333;
-          max-width: 600px;
-          margin: 0 auto 1.5rem;
-          font-style: italic;
-        }
-        
-        .testimonial-controls {
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-        }
-        
-        .control-button {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #e0e0e0;
-          background: white;
-          cursor: pointer;
-          transition: all 0.2s ease;
-        }
-        
-        .control-button:hover {
-          background: #f5f5f5;
-        }
-        
-        .next-button {
-          background: #6366f1;
-          color: white;
-          border: none;
-        }
-        
-        .next-button:hover {
-          background: #4f46e5;
-        }
-        
-        @media (max-width: 768px) {
-          .image-grid {
-            height: 300px;
-          }
-          
-          .discover-title {
-            font-size: 2rem;
-          }
-          
-          .discover-description {
-            font-size: 1rem;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .image-grid {
-            height: 250px;
-            flex-direction: column;
-            align-items: center;
-          }
-          
-          .image-stack {
-            width: 100%;
-            height: 33%;
-          }
-        }
-      `}</style>
+      <div className="w-full flex items-start justify-center gap-2">
+        <Image
+          src={Images.t1}
+          alt="image"
+          width={2000}
+          height={2000}
+          className="w-[100%] object-cover lg:block hidden"
+        />
+        <Image
+          src={Images.t2}
+          alt="image"
+          width={2000}
+          height={2000}
+          className="w-[100%] object-cover"
+        />
+        <Image
+          src={Images.t3}
+          alt="image"
+          width={2000}
+          height={2000}
+          className="w-[100%] object-cover lg:block hidden"
+        />
+      </div>
+
+      <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] text-center font-outfit gap-5 flex flex-col items-center justify-center">
+              <p className="text-[#191A15] font-[600] text-[22px]">{Testimonials[currentSlide].author}</p>
+              <p className="text-[#191A15]/80 font-[400] text-[16px]">&quot;{Testimonials[currentSlide].quote}&quot;</p>
+              
+              <div className="flex items-center justify-center gap-5 mt-5">
+                <button 
+                  className=""
+                  onClick={prevSlide}
+                  aria-label="Previous testimonial"
+                >
+                  <IoArrowBackCircle className="size-12 text-tcolor cursor-pointer" />
+                </button>
+                <button 
+                  className="" 
+                  onClick={nextSlide}
+                  aria-label="Next testimonial"
+                >
+                  <IoArrowForwardCircle className="size-12 text-tcolor cursor-pointer" />
+                </button>
+              </div>
+            </div>
     </div>
   );
 };

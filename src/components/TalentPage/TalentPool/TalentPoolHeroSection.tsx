@@ -46,7 +46,7 @@ const TalentPoolHeroSection = () => {
         className="w-full sm:w-[80%] md:w-[70%] lg:w-[50%]"
       >
         <p className="text-[17px] sm:text-[20px] text-center font-normal font-lato">
-          Work with the world's biggest creators, companies whether that's
+          Work with the world&apos;s biggest creators, companies whether that&apos;s
           freelance or full-time role.
         </p>
       </Fade>
