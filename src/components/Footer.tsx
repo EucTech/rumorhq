@@ -10,8 +10,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className=" relative overflow-hidden w-full flex flex-col items-center gap-4 pt-20 bg-[#191919]">
-      <div className="w-full grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 text-[#bcc9f3]  gap-5 sm:gap-10  px-10 md:px-20 pb-4">
+    <div className=" relative overflow-hidden w-full flex flex-col items-center gap-4 pt-20 bg-no-repeat bg-cover bg-[url('/footer.png')]">
+      
+      <div className="w-full z-30 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 text-[#bcc9f3]  gap-5 sm:gap-10  px-10 md:px-20 pb-4">
         <div className="flex flex-col gap-4">
           <h1 className={`text-white font-bold text-lg ${dm_sans.className}`}>
             Platforms
@@ -19,14 +20,14 @@ const Footer = () => {
           <ul
             className={`flex flex-col gap-2 text-[15px] font-normal ${inter.className}`}
           >
-            <Link className="hover:text-white text-[#CBCBCC]" href={"/"}>
+            <Link className="hover:text-white text-[#CBCBCC]" href={"/creators"}>
               <li>Creators</li>
             </Link>
-            <Link className="hover:text-white text-[#CBCBCC]" href={"/"}>
+            <Link className="hover:text-white text-[#CBCBCC]" href={"/brands"}>
               <li>Brands</li>
             </Link>
-            <Link className="hover:text-white text-[#CBCBCC]" href={"/"}>
-              <li>Hackathon </li>
+            <Link className="hover:text-white text-[#CBCBCC]" href="/talents">
+              <li>Talents </li>
             </Link>
           </ul>
         </div>
@@ -74,7 +75,7 @@ const Footer = () => {
           <ul
             className={`flex flex-col gap-2 text-[15px] font-normal ${inter.className}`}
           >
-            <Link className="hover:text-white text-[#CBCBCC]" href={"/"}>
+            <Link className="hover:text-white text-[#CBCBCC]" href={"https://withaudacious.substack.com/publish/home?utm_source=menu"}>
               <li>Newsletter</li>
             </Link>
             <Link className="hover:text-white text-[#CBCBCC]" href={"/"}>
@@ -98,9 +99,9 @@ const Footer = () => {
           >
             <Link
               className="hover:text-white text-[#CBCBCC]"
-              href={"mailto:Support@rumorhq.com"}
+              href={"mailto:Support@creatorsavenue.com"}
             >
-              <li>support@rumorhq.com</li>
+              <li>support@creatorsavenue.com</li>
             </Link>
             <li>+2348101832699</li>
             <li>Applewood Estate1, Orchid Road Lekki, Lagos State </li>
@@ -108,11 +109,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-[90%] h-2 border-b border-[#898A8C]" />
+      <div className="w-[90%] h-2 border-b border-[#898A8C] z-30" />
 
-      <div className="w-full text-white bg-tdeepblue flex flex-col md:flex-row gap-5 items-center justify-between py-5 px-5 md:px-20">
+      <div className="w-full z-30 text-white bg-tdeepblue flex flex-col md:flex-row gap-5 items-center justify-between py-5 px-5 md:px-20">
         <p className=" text-center text-sm">
-          &copy;2025 Rumohq. All right reserved
+          &copy;2025 Creators avenue. All right reserved
         </p>
 
         <div className="flex items-center gap-4">
@@ -121,7 +122,7 @@ const Footer = () => {
             <Link href="#" className=" size-8 sm:size-10 flex items-center justify-center rounded-full border border-[#898A8C]">
               <GrFacebookOption className="hover:text-[#898A8C] text-[#fff] size-3 sm:size-4" />
             </Link>
-            <Link href="#" className=" size-8 sm:size-10 flex items-center justify-center rounded-full border border-[#898A8C]">
+            <Link href="https://www.instagram.com/mendhq/profilecard/?igsh=N2NlOG5udzdtMzRt" className=" size-8 sm:size-10 flex items-center justify-center rounded-full border border-[#898A8C]">
               <GrInstagram className="hover:text-[#898A8C] text-[#fff] size-3 sm:size-4" />
             </Link>
             <Link href="#" className=" size-8 sm:size-10 flex items-center justify-center rounded-full border border-[#898A8C]">

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import { Images } from "@/assets";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -8,9 +9,11 @@ import { GoDotFill } from "react-icons/go";
 import { Fade } from "react-awesome-reveal";
 
 const BootcampHeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   return (
-    <div className="w-full h-full relative lg:h-[35em] flex flex-col lg:flex-row items-center justify-center overflow-hidden">
-      <div className="w-full relative flex flex-col gap-4 justify-center items-center lg:items-start min-h-[25em] lg:h-full flex-1  bg-[#FFF6F0] py-10 px-4 sm:px-10 md:px-44 lg:px-16 xl:px-20">
+    <div className="w-full min-h-[40em] relative lg:h-[35em] flex flex-col lg:flex-row bg-[#FFF6F0] items-center justify-between overflow-hidden">
+      <div className="md:w-[90%] lg:w-[60%] relative flex flex-col gap-4 justify-center items-center lg:items-start min-h-[25em] lg:h-full flex-1 py-10 px-4 sm:px-10 md:px-44 lg:px-16 xl:px-20">
         <Fade
           damping={0.5}
           triggerOnce
@@ -31,9 +34,9 @@ const BootcampHeroSection = () => {
             Learn, Create & Get hired
           </h1>
           <p className=" lg:text-start text-center w-full xl:w-[80%] font-sf text-[18px] text-[#5E5D6F]">
-            We don&apos;t just teach you how to create. <br /> We show you how to build
-            a brand, package your work into a powerful portfolio, and connect
-            you to real brands looking for what you do.
+            We don&apos;t just teach you how to create. <br /> We show you how
+            to build a brand, package your work into a powerful portfolio, and
+            connect you to real brands looking for what you do.
           </p>
         </Fade>
 
@@ -47,8 +50,11 @@ const BootcampHeroSection = () => {
           className=""
         >
           <div className="w-full flex sm:flex-row flex-col gap-4 lg:justify-start justify-center items-center lg:items-start mt-5 z-30">
-            <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeG7bng5pEu0hgLzlFtSt9HfUup-MI4qzwH7D0P9gMtWdNhjQ/viewform?usp=header">
-              <Button className="flex items-center text-[18px] font-[400] cursor-pointer bg-tcolor text-white hover:bg-tcolor/80 transition-colors duration-300 px-16 sm:px-20 py-[26px] gap-2 rounded-3xl">
+            <Link
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeG7bng5pEu0hgLzlFtSt9HfUup-MI4qzwH7D0P9gMtWdNhjQ/viewform?usp=header"
+            >
+              <Button className="flex items-center text-[18px] font-[400] cursor-pointer bg-tcolor text-white hover:bg-tcolor/80 transition-colors duration-300 px-16 sm:px-20 py-[26px] gap-2 rounded-[100px]">
                 Apply
               </Button>
             </Link>
@@ -71,15 +77,32 @@ const BootcampHeroSection = () => {
         />
       </div>
 
-      <div className="w-full lg:w-fit flex items-center justify-center bg-[#FFF6F0] overflow-hidden">
+      <div className=" relative h-full w-full md:w-[70%] lg:w-[40%] flex items-center justify-center bg-[#FFF6F0] overflow-hidden">
+        
         <Image
           src={Images.hero}
           alt="hero image"
           width={500}
           height={500}
-          className="  object-cover "
+          className="  object-cover lg:absolute top-0 left-0 w-full h-full z-10"
         />
+
+          <video
+            ref={videoRef}
+            className="w-[85%] lg:w-[80%] h-[85%] object-cover absolute bottom-0 translate-x-0 z-20 rounded-t-md"
+            // controls
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              src="/videos/v10.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
       </div>
+
       <Image
         src={Images.black_star}
         alt="hero image"

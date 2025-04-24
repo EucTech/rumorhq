@@ -55,7 +55,7 @@ const Steps = () => {
           className=""
         >
           <StepsProps
-            title="Build Portfolio"
+            title="Attend top-tier live workshops with your favorite creators every week."
             content="we&apos;re training the next generation of creators to become skilled, brand-ready professionals whether you&apos;re starting out or leveling up."
           />
         </Fade>
@@ -69,7 +69,7 @@ const Steps = () => {
           className="  "
         >
           <StepsProps
-            title="Manage"
+            title="Create With Purpose"
             content="We help you move beyond trends by creating purposeful content that reflects your voice, aligns with your goals, and connects with real people not just the algorithm."
             className="bg-[#FFF6F0]"
           />

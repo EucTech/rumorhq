@@ -4,10 +4,11 @@ import { BrandType } from "@/utils/dummyData";
 import Image from "next/image";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 const GlobalBrands = () => {
- 
-
   return (
     <div className="w-full flex flex-col items-center justify-center gap-5 py-20 px-2 sm:px-10 md:px-20">
       <div className="w-full flex flex-col items-center bg-white gap-4 p-5 sm:p-8">
@@ -36,38 +37,57 @@ const GlobalBrands = () => {
         </Fade>
       </div>
 
-      <div className="w-full flex flex-wrap items-center justify-center gap-6 ">
-        {BrandType.map((item) => {
-          return (
-            <Fade
-              key={item.id}
-              direction="up"
-              delay={ item.id * 200}
-              duration={1000}
-              damping={0.5}
-              fraction={0.1}
-              triggerOnce
-              className="w-[10em] h-[8em]"
-            >
-              <div
-                key={item.id}
-                className="w-full h-full flex flex-col items-center justify-center gap-3 rounded-lg border border-[#E1E8EDBA]"
-              >
-                <Image
-                  src={item.icon}
-                  alt={item.alt}
-                  width={2000}
-                  height={2000}
-                  className="w-10"
-                />
-                <p className="font-sf text-[#000] text-[13px] font-[400]">
-                  {item.title}
-                </p>
-              </div>
-            </Fade>
-          );
-        })}
-      </div>
+      <Splide
+        options={{
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          arrows: false,
+          perPage: 6,
+          width: "100%",
+          gap: "1rem",
+          pagination: false,
+          autoScroll: {
+            speed: 1.5,
+          },
+          breakpoints: {
+            500: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 5,
+            },
+            1024: {
+              perPage: 6,
+            },
+            1440: {
+              perPage: 5,
+            },
+          },
+        }}
+        extensions={{ AutoScroll }}
+        className="w-full"
+      >
+        {BrandType.map((item) => (
+          <SplideSlide key={item.id}>
+            <div className="w-[10em] h-[8em] flex flex-col items-center justify-center gap-3 rounded-lg border border-[#E1E8EDBA]">
+              <Image
+                src={item.icon}
+                alt={item.alt}
+                width={2000}
+                height={2000}
+                className="w-10"
+              />
+              <p className="font-sf text-[#000] text-[13px] font-[400]">
+                {item.title}
+              </p>
+            </div>
+          </SplideSlide>
+        ))}
+      </Splide>
     </div>
   );
 };

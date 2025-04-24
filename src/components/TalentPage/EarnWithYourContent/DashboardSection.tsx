@@ -6,7 +6,7 @@ const DashboardSection = () => {
   return (
     <div className='w-full h-full bg-[#000] flex items-center justify-center'>
     
-      <Image src={Images.dashbaord} alt='dashboard image' width={2000} height={2000} className=' size-[90%] sm:size-[80%]' />
+      <Image src={Images.dashbaord} alt='dashboard image' width={3000} height={3000} className=' size-[90%] sm:size-[80%]' />
     </div>
   )
 }

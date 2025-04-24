@@ -15,8 +15,7 @@ const LetTalk = () => {
       <p
         className={` w-full sm:w-[80%] md:w-[70%] xl:w-[50%] text-[16px] text-white ${inter.className} `}
       >
-        Go borderless on mobile! Download the app and sign up to enjoy managing
-        your bills and utilities from anywhere in the world.
+        Camera shy? Let the pros hop in. Our team has generated millions of views across different content types.
       </p>
       <Link href="mailto:support@rumorhq.com">
         <Button className="flex items-center gap-5 cursor-pointer bg-[#191919] text-white hover:bg-[#191919]/80 transition-colors duration-300 !px-6 py-8 rounded-md">

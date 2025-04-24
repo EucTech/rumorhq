@@ -64,33 +64,45 @@ export const CustomerReviewData: CustomerReviewPropsType[] = [
 export const BrandType: BrandPropsType[] = [
   {
     id: 1,
-    icon: Images.icon5.src,
+    icon: Images.icon7.src,
     alt: "Brand 1",
-    title: "Video Editor",
+    title: "Content Creators",
   },
   {
     id: 2,
-    icon: Images.icon6.src,
+    icon: Images.icon5.src,
     alt: "Brand 2",
-    title: "Thumbnail Designer",
+    title: "Video Editor",
   },
   {
     id: 3,
-    icon: Images.icon7.src,
+    icon: Images.icon6.src,
     alt: "Brand 3",
-    title: "Content Strategist",
+    title: "Thumbnail Designer",
   },
   {
     id: 4,
-    icon: Images.icon8.src,
+    icon: Images.icon7.src,
     alt: "Brand 4",
-    title: "Social media managers",
+    title: "Content Strategist",
   },
   {
     id: 5,
     icon: Images.icon8.src,
     alt: "Brand 5",
+    title: "Social media managers",
+  },
+  {
+    id: 6,
+    icon: Images.icon8.src,
+    alt: "Brand 6",
     title: "Creative directors",
+  },
+  {
+    id: 7,
+    icon: Images.icon7.src,
+    alt: "Brand 7",
+    title: "Community managers",
   },
   
 ]

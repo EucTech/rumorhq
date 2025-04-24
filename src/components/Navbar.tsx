@@ -26,7 +26,7 @@ const Navbar = () => {
     <div className="fixed z-50 w-full h-[5em] bg-bgcolor backdrop-blur-md flex items-center px-5 md:px-10 lg:px-24 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
       <div className="w-full flex items-center gap-10">
         <Link href="/">
-          <h1 className="w-[8em] text-white font-bold text-[28px]">Rumorhq</h1>
+          <h1 className="w-[8em] text-white font-bold text-[23px]">Creators avenue</h1>
         </Link>
       </div>
 
@@ -43,14 +43,14 @@ const Navbar = () => {
           <div>
             <TalentModal />
           </div>
-          {/* <Link
+          <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
               "/creators"
             )}`}
             href="/creators"
           >
             <li>Creators</li>
-          </Link> */}
+          </Link>
           {/* <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
               "/resources"
@@ -64,8 +64,8 @@ const Navbar = () => {
           </Link> */}
         </ul>
 
-        <Link href="#">
-          <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/70 transition-colors duration-300 px-6! py-5 gap-2 rounded-md">
+        <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
+          <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/70 transition-colors duration-300 px-8! py-5 gap-2 rounded-[100px]">
             <p className="text-[15px] font-[400]">Book a Call</p>
           </Button>
         </Link>
@@ -93,11 +93,11 @@ const Navbar = () => {
                 <div>
                   <TalentModal onClose={closeSheet} />
                 </div>
-                {/* <Link href="/creators" className={`${isActive("/creators")}`}>
+                <Link href="/creators" className={`${isActive("/creators")}`}>
                   <li className="hover:text-tblue-2" onClick={closeSheet}>
                     Creators
                   </li>
-                </Link> */}
+                </Link>
                 {/* <Link href="/resources" className={`${isActive("/resources")}`}>
                   <li className="hover:text-tblue-2" onClick={closeSheet}>
                     Resources
@@ -106,10 +106,10 @@ const Navbar = () => {
               </ul>
 
               <div className="flex flex-wrap items-center gap-6">
-                <Link href="#">
+                <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
                   <Button
                     onClick={closeSheet}
-                    className="flex items-center cursor-pointer bg-tcolor transition-colors duration-300 text-white hover:bg-tcolor/70 px-6! py-5 gap-2 rounded-md"
+                    className="flex items-center cursor-pointer bg-tcolor transition-colors duration-300 text-white hover:bg-tcolor/70 px-6! py-5 gap-2 rounded-[100px]"
                   >
                     <p className="text-[15px] font-[400]">Book a Call</p>
                   </Button>

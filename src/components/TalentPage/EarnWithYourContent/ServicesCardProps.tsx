@@ -11,7 +11,7 @@ interface ServicesCardPropsType {
 const ServicesCardProps: React.FC<ServicesCardPropsType> = ({iconStyle, title, content}) => {
   return (
     <div className={` min-w-[22em] sm:w-[20em] min-h-[16em] flex flex-col items-center text-center gap-3 border border-[#BF91F9] p-5 ${dm_sans.className}`}>
-      <div className={`size-14 flex items-center justify-center bg-[#006E88] rounded-full ${iconStyle}`}>
+      <div className={`size-14 flex items-center justify-center bg-[#BF91F9] rounded-full ${iconStyle}`}>
         <RiUserSmileFill className="text-[#fff] size-7" />
       </div>
 

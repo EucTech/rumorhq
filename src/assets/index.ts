@@ -35,6 +35,8 @@ import t2 from "./images/t2.png";
 import t3 from "./images/t3.png";
 import list from "./images/list.png";
 
+
+
 export const Images = { 
     logo,
     hero,

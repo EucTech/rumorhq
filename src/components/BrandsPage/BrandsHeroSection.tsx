@@ -21,7 +21,7 @@ const BrandsHeroSection = () => {
         <p
           className={`w-fit flex items-center gap-4 font-normal text-[15px] text-[#191919] bg-[#E5DBFF] px-5 py-2 rounded-lg  ${dm_sans.className} `}
         >
-          Where brand and creators get rewarded
+          Where brands and creators get rewarded
         </p>
       </Fade>
 
@@ -37,7 +37,7 @@ const BrandsHeroSection = () => {
         <h1
           className={` w-full text-[#000] text-[40px] sm:text-[50px] xl:text-[70px] 2xl:text-[90px] font-extrabold leading-[1.3] ${abhaya_libre.className}`}
         >
-          Go Viral with Hackathon
+          Go Viral with Hackathons
         </h1>
       </Fade>
       <Fade
@@ -51,7 +51,7 @@ const BrandsHeroSection = () => {
       >
         <p className={`  text-[18px] font-normal text-[#5E5D6F] ${dm_sans.className}`}>
           List a Content challenge or hire creators for your project and find
-          your next contributor withaudacious hackathon
+          your next contributor on withaudacious hackathons
         </p>
       </Fade>
       <Fade

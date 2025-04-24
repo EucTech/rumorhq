@@ -24,7 +24,7 @@ const FAQS = () => {
         <p className="w-full lg:w-[90%] text-[#6C747D] text-[16px] font-[400] ">
           Feel free to reach out to us if you have more questions for us.
         </p>
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeG7bng5pEu0hgLzlFtSt9HfUup-MI4qzwH7D0P9gMtWdNhjQ/viewform?usp=header">
+        <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
           <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/90 transition-colors duration-300 px-8 py-5 gap-2 rounded-md">
             <p className="text-[15px] font-[600]">Book a Call</p>
           </Button>

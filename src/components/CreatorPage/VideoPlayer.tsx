@@ -1,7 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { useRef, useState, useEffect } from "react";
-import { IoPlay, IoPause, IoVolumeHigh, IoVolumeMute } from "react-icons/io5";
+import { IoVolumeHigh, IoVolumeMute } from "react-icons/io5";
+
+// IoPlay, IoPause, 
 
 // Global variable to track the currently playing video
 let currentlyPlaying: HTMLVideoElement | null = null;
@@ -122,7 +124,7 @@ export default function VideoPlayer({
   return (
     <section
       className={cn(
-        "relative w-[30em] h-[26em] overflow-hidden rounded-[30px] ",
+        "relative w-[30em] h-[28em] overflow-hidden rounded-[10px] ",
         className
       )}
     >
@@ -132,13 +134,16 @@ export default function VideoPlayer({
         className="w-full h-full object-cover"
         onClick={handlePlayPause}
         onTimeUpdate={handleProgress}
+        loop
+        muted
+        autoPlay
       >
         <source src={link} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Play Button */}
-      <div className="absolute top-5 right-5 w-16 h-16 rounded-full flex items-center justify-center transform bg-white/80 p-3">
+      {/* <div className="absolute top-5 right-5 w-16 h-16 rounded-full flex items-center justify-center transform bg-white/80 p-3">
         <button
           onClick={handlePlayPause}
           className="size-full flex items-center justify-center text-white text-2xl bg-[#350F5A]/20 rounded-full "
@@ -149,7 +154,7 @@ export default function VideoPlayer({
             <IoPlay className="text-black" />
           )}
         </button>
-      </div>
+      </div> */}
 
       {isPlaying && (
         <div className="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-50 flex items-center justify-between">

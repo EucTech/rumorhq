@@ -49,7 +49,7 @@ const CreatorSteps = () => {
       </Fade>
 
       <div className="w-full flex xl:flex-nowrap flex-wrap items-center justify-center gap-5 pt-10">
-      <Fade
+        <Fade
           triggerOnce
           fraction={0.1}
           duration={1000}
@@ -74,8 +74,9 @@ const CreatorSteps = () => {
               <p
                 className={` text-[14px] text-[#5E5D6F] font-normal ${inter.className}`}
               >
-                Upon arrival, the payment process is simple. The payment is
-                processed and you can pay cash
+                From sourcing the best talent to seamless onboarding, we handle
+                every step of the hiring process to connect top creators with
+                the right opportunities.
               </p>
             </div>
           </div>
@@ -143,7 +144,6 @@ const CreatorSteps = () => {
             </div>
           </div>
         </Fade>
-       
       </div>
     </div>
   );

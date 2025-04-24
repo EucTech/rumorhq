@@ -15,10 +15,10 @@ const BrandsLetTalk = () => {
       <p
         className={` w-full sm:w-[80%] md:w-[70%] xl:w-[50%] text-[16px] text-white ${inter.className} `}
       >
-        Join 100+ creators and companies using rumour to hire all creative roles
+        Join 1000+ creators and companies using rumour to hire all creative roles
         without the hassle.
       </p>
-      <Link href="https://docs.google.com/forms/d/e/1FAIpQLScJm4k1ViHbzkuUyF6G7QAzcZPuH_UmyGABVJcRQ1CQ0e6nHw/viewform?usp=header">
+      <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
         <Button className="flex items-center gap-5 cursor-pointer bg-[#191919] text-white hover:bg-[#191919]/80 transition-colors duration-300 !px-6 py-8 rounded-md">
           <FaEnvelope className="text-[#E1E8ED] size-7" />
           <p className={`text-[16px] font-[400] ${inter.className}`}>

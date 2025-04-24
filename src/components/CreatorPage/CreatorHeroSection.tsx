@@ -67,7 +67,7 @@ const CreatorHeroSection = () => {
         className=""
       >
         <Link href="https://docs.google.com/forms/d/e/1FAIpQLScJm4k1ViHbzkuUyF6G7QAzcZPuH_UmyGABVJcRQ1CQ0e6nHw/viewform?usp=header">
-          <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/80 transition-colors duration-300 px-10 py-5 gap-2 rounded-3xl">
+          <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/80 transition-colors duration-300 px-10 py-5 gap-2 rounded-[30px]">
             <p className="text-[16px] font-[500]">Get Started </p>
           </Button>
         </Link>

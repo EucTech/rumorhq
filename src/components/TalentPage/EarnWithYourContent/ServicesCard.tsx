@@ -29,10 +29,9 @@ const ServicesCard = () => {
             <div
               className={`flex flex-col items-center text-center justify-center gap-2 ${inter.className}`}
             >
-              <p className="text-white text-[17px] font-bold">Testimonials</p>
+              <p className="text-white text-[17px] font-bold">What you can do </p>
               <p className="text-white text-[14px] font-[300]">
-                Capture the attention of thousands of potential customers as
-                your video ads are displayed by drivers.
+              Create income while having fun at it. 
               </p>
             </div>
           </div>
@@ -79,7 +78,7 @@ const ServicesCard = () => {
             <ServicesCardProps
               title="Creative Storytelling"
               content="whether it's scripting for videos, writing engaging captions, crafting compelling brand stories, or even sharing your personal journey in a relatable way."
-              iconStyle="bg-[#FDDE90]"
+              iconStyle="bg-[#BF91F9]"
             />
           </Fade>
           <Fade
