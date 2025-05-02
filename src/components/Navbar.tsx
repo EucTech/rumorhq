@@ -64,7 +64,7 @@ const Navbar = () => {
           </Link> */}
         </ul>
 
-        <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0aAHivRO3VVfuHIIqyyWGwNf8hi7YyyewKUHaKntKWI6OLA/viewform?usp=sharing">
           <Button className="flex items-center cursor-pointer bg-tcolor text-white hover:bg-tcolor/70 transition-colors duration-300 px-8! py-5 gap-2 rounded-[100px]">
             <p className="text-[15px] font-[400]">Book a Call</p>
           </Button>
@@ -106,7 +106,7 @@ const Navbar = () => {
               </ul>
 
               <div className="flex flex-wrap items-center gap-6">
-                <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0aAHivRO3VVfuHIIqyyWGwNf8hi7YyyewKUHaKntKWI6OLA/viewform?usp=sharing">
                   <Button
                     onClick={closeSheet}
                     className="flex items-center cursor-pointer bg-tcolor transition-colors duration-300 text-white hover:bg-tcolor/70 px-6! py-5 gap-2 rounded-[100px]"
