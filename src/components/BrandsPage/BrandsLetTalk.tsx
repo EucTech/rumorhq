@@ -15,7 +15,7 @@ const BrandsLetTalk = () => {
       <p
         className={` w-full sm:w-[80%] md:w-[70%] xl:w-[50%] text-[16px] text-white ${inter.className} `}
       >
-        Join 1000+ creators and companies using rumour to hire all creative roles
+        Join 1000+ creators and companies using creators avenue to hire all creative roles
         without the hassle.
       </p>
       <Link href="https://calendly.com/startegy-session-with-amara/career-chat-with-audacious">
