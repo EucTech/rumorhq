@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { IoMdCheckboxOutline } from "react-icons/io";
 
@@ -11,6 +12,7 @@ interface EventPropsType {
   content3?: string;
   content4?: string;
   content5?: string;
+  content6?: string;
 }
 
 const EventProps = ({
@@ -23,6 +25,7 @@ const EventProps = ({
   content3,
   content4,
   content5,
+  content6,
 }: EventPropsType) => {
   return (
     <div className="flex flex-col gap-4 w-[26em] h-fit min-h-[30em] rounded-lg border border-[#83838333] py-8 px-4">
@@ -40,42 +43,39 @@ const EventProps = ({
           <h1 className="text-[34px] font-[500] leading-[1.1]">{eweeks}</h1>
           <p className="text-[156x]">weeks</p>
         </div>
-     
-            <button className="w-full text-[14px] bg-tcolor text-white py-2 px-3 rounded-4xl">
-              Register
-            </button>
+
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdSWD0u7wISFTFCfS36ZgCoReHuUG5rgBv_mNaw6dUzPXtIFw/viewform?usp=header"
+          className="w-full flex items-center justify-center text-[14px] bg-tcolor text-white py-2 px-3 rounded-4xl"
+        >
+          Register
+        </Link>
       </div>
 
-      <div className=" flex flex-col items-start gap-5 font-outfit">
+      <div className="w-full flex flex-col items-start gap-5 font-outfit">
         <div className="flex items-start gap-2">
-          <IoMdCheckboxOutline className="text-tcolor size-6 " />
-          <p className="font-[400] text-black text-[15px]">
-            {content1}
-          </p>
+          <IoMdCheckboxOutline className="text-tcolor flex-shrink-0 size-6 " />
+          <p className="font-[400] text-black text-[15px]">{content1}</p>
         </div>
         <div className="flex items-start gap-2">
-          <IoMdCheckboxOutline className="text-tcolor size-6 " />
-          <p className="font-[400] text-black text-[15px]">
-            {content2}
-          </p>
+          <IoMdCheckboxOutline className="text-tcolor flex-shrink-0 size-6 " />
+          <p className="font-[400] text-black text-[15px]">{content2}</p>
         </div>
         <div className="flex items-start gap-2">
-          <IoMdCheckboxOutline className="text-tcolor size-6 " />
-          <p className="font-[400] text-black text-[15px]">
-            {content3}
-          </p>
+          <IoMdCheckboxOutline className="text-tcolor flex-shrink-0 size-6 " />
+          <p className="font-[400] text-black text-[15px]">{content3}</p>
         </div>
         <div className="flex items-start gap-2">
-          <IoMdCheckboxOutline className="text-tcolor size-6 " />
-          <p className="font-[400] text-black text-[15px]">
-            {content4}
-          </p>
+          <IoMdCheckboxOutline className="text-tcolor flex-shrink-0 size-6 " />
+          <p className="font-[400] text-black text-[15px]">{content4}</p>
         </div>
         <div className="flex items-start gap-2">
-          <IoMdCheckboxOutline className="text-tcolor size-6 " />
-          <p className="font-[400] text-black text-[15px]">
-            {content5}
-          </p>
+          <IoMdCheckboxOutline className="text-tcolor flex-shrink-0 size-6 " />
+          <p className="font-[400] text-black text-[15px]">{content5}</p>
+        </div>
+        <div className="flex items-start gap-2">
+          <IoMdCheckboxOutline className="text-tcolor flex-shrink-0 size-6 " />
+          <p className="font-[400] text-black text-[15px]">{content6}</p>
         </div>
       </div>
     </div>
