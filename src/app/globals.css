@@ -11,9 +11,61 @@
   --color-bgcolor: #141011;
 }
 
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('/fonts/ClashDisplay-Extralight.woff2') format('woff2');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('/fonts/ClashDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('/fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('/fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
 @theme inline {
+  --font-clashDisplay-bold: "ClashDisplay-Bold", sans-serif;
+  --font-clashDisplay-semibold: "ClashDisplay-Semibold", sans-serif;
+  --font-clashDisplay-medium: "ClashDisplay-Medium", sans-serif;
+  --font-clashDisplay-regular: "ClashDisplay-Regular", sans-serif;
+  --font-clashDisplay-light: "ClashDisplay-Light", sans-serif;
+  --font-instrumentSans: "Instrument Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
   --font-sf: 'SF Pro Display', sans-serif;
 }
+
 
 @theme inline {
   --color-background: var(--background);

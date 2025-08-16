@@ -3,6 +3,7 @@ import {
   Abhaya_Libre,
   DM_Sans,
   Instrument_Sans,
+  Poppins,
 } from "next/font/google";
 
 
@@ -19,3 +20,7 @@ export const abhaya_libre = Abhaya_Libre({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+export const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});

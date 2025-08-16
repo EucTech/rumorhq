@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "./ui/button";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
@@ -12,20 +11,20 @@ import {
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { inter } from "@/font";
 import { usePathname } from "next/navigation";
-import TalentModal from "./TalentPage/TalentModal";
+import { Button } from "../ui/button";
 
-const Navbar = () => {
+const DashboardNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const closeSheet = () => setIsOpen(false);
   const pathname = usePathname();
 
   const isActive = (path: string) =>
-    pathname == path ? "text-tcolor font-bold" : "";
+    pathname == path ? "text-tcolor font-bold border-b border-tcolor" : "";
 
   return (
     <div className="fixed z-50 w-full h-[5em] bg-bgcolor backdrop-blur-md flex items-center px-5 md:px-10 lg:px-24 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
       <div className="w-full flex items-center gap-10">
-        <Link href="/">
+        <Link href="/dashboard/hackton">
           <h1 className="w-[8em] text-white font-bold text-[23px]">Creators avenue</h1>
         </Link>
       </div>
@@ -34,15 +33,12 @@ const Navbar = () => {
         <ul className="flex items-center gap-6 text-[15px] text-white font-[500]">
           <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
-              "/brands"
+              "/dashboard/hackton"
             )}`}
-            href="/brands"
+            href="/dashboard/hackton"
           >
-            <li>Brands</li>
+            <li>Hackton</li>
           </Link>
-          <div>
-            <TalentModal />
-          </div>
           <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
               "/creators"
@@ -50,14 +46,6 @@ const Navbar = () => {
             href="/creators"
           >
             <li>Creators</li>
-          </Link>
-          <Link
-            className={`hover:text-tcolor transition-colors duration-300 ${isActive(
-              "/hackton"
-            )}`}
-            href="/hackton"
-          >
-            <li>Hackton</li>
           </Link>
           {/* <Link
             className={`hover:text-tcolor transition-colors duration-300 ${isActive(
@@ -93,22 +81,15 @@ const Navbar = () => {
             </VisuallyHidden>
             <div className={`grid gap-8 py-20 pl-6 ${inter.className}`}>
               <ul className="flex flex-col gap-6 text-white text-[15px] font-[500]">
-                <Link href="/brands" className={`${isActive("/brands")}`}>
+                <Link href="/dashboard/hackton" className={`${isActive("/dashboard/hackton")}`}>
                   <li className="hover:text-tblue-2" onClick={closeSheet}>
                     Brands
                   </li>
                 </Link>
-                <div>
-                  <TalentModal onClose={closeSheet} />
-                </div>
+                
                 <Link href="/creators" className={`${isActive("/creators")}`}>
                   <li className="hover:text-tblue-2" onClick={closeSheet}>
                     Creators
-                  </li>
-                </Link>
-                <Link href="/hackton" className={`${isActive("/hackton")}`}>
-                  <li className="hover:text-tblue-2" onClick={closeSheet}>
-                    Hackton
                   </li>
                 </Link>
                 {/* <Link href="/resources" className={`${isActive("/resources")}`}>
@@ -136,4 +117,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DashboardNavbar;
