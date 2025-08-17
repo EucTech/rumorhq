@@ -110,53 +110,65 @@ export const BrandType: BrandPropsType[] = [
 
 export const HacktonsData = [
   {
+    id: "1",
     image: Images.hacktonHero.src,
     location: "Lagos",
     date: "24, July 2025",
     title: "Homified Food Hackathon",
     prize: "$4K-10K USDT",
     category: ["Food Tech", "Hackathon", "Innovation"],
+    skills: ["Storying telling", "Video editing", "Content creations", "Social media management", "Creative direction", "Community management"],
   },
   {
+    id: "2",
     image: Images.hacktonHero.src,
     location: "Abuja",
     date: "22, July 2025",
     title: "Homified Food Hackathon",
     prize: "$2K-5K USDT",
     category: ["Food Tech", "Hackathon", "Innovation"],
+    skills: ["Storying telling", "Video editing", "Content creations", "Social media management", "Creative direction", "Community management"],
   },
   {
+    id: "3",
     image: Images.hacktonHero.src,
     location: "Port Harcourt",
     date: "30, July 2025",
     title: "Homified Food Hackathon",
     prize: "$3K-7K USDT",
     category: ["Food Tech", "Hackathon", "Innovation"],
+    skills: ["Storying telling", "Video editing", "Content creations", "Social media management", "Creative direction", "Community management"],
   },
   {
+    id: "4",
     image: Images.hacktonHero.src,
     location: "Ibadan",
     date: "15, August 2025",
     title: "Homified Food Hackathon",
     prize: "$1K-4K USDT",
     category: ["Food Tech", "Hackathon", "Innovation"],
+    skills: ["Storying telling", "Video editing", "Content creations", "Social media management", "Creative direction", "Community management"],
   },
   {
+    id: "5",
     image: Images.hacktonHero.src,
     location: "Enugu",
     date: "10, September 2025",
     title: "Homified Food Hackathon",
     prize: "$5K-12K USDT",
     category: ["Food Tech", "Hackathon", "Innovation"],
+    skills: ["Storying telling", "Video editing", "Content creations", "Social media management", "Creative direction", "Community management"],
   },
 
   {
+    id: "6",
     image: Images.hacktonHero.src,
     location: "Enugu",
     date: "10, September 2025",
     title: "Homified Food Hackathon",
     prize: "$5K-12K USDT",
     category: ["Food Tech", "Hackathon", "Innovation"],
+    skills: ["Storying telling", "Video editing", "Content creations", "Social media management", "Creative direction", "Community management"],
   }
 
 ]

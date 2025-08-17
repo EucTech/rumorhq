@@ -36,6 +36,8 @@ import t3 from "./images/t3.png";
 import list from "./images/list.png";
 import hacktonHero from "./images/hacktonHero.jpg";
 import hacktonImage from "./images/hacktonImage.png"
+import hactkonDetailImage from "./images/hactkonDetailImage.png"
+import himage from "./images/himage.png"
 
 
 
@@ -78,4 +80,6 @@ export const Images = {
     list,
     hacktonHero,
     hacktonImage,
+    hactkonDetailImage,
+    himage,
 }

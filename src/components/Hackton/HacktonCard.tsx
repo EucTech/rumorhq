@@ -81,7 +81,7 @@ const HacktonCard = ({ hackton }: { hackton: HacktonProps }) => {
         </div>
 
         <Button
-          onClick={() => {router.push(`/hackton/`)}}
+          onClick={() => {router.push(`/hackton/${hackton.id}`)}}
           className="w-full flex items-center cursor-pointer bg-[#6A0AE4] text-white hover:bg-[#6A0AE4]/80 transition-colors duration-300 px-10 py-5 gap-2 rounded-3xl"
         >
           <p className={`text-[16px] font-[500] ${inter.className}`}>
